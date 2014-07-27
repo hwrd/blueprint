@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: myapp_development
+  host: 127.0.0.1
+  database: myapp_development
+  username: myapp
+  password:
