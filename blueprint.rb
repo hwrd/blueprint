@@ -26,7 +26,7 @@ end
 gem 'bootstrap-sass'
 gem 'bourbon'
 
-group :development do
+gem_group :development do
   gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
 end
 
