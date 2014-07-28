@@ -29,6 +29,7 @@ gem 'bourbon'
 gem_group :development do
   gem 'annotate', git: 'git://github.com/ctran/annotate_models.git'
 end
+copy_from_repo 'common/lib/tasks/auto_annotate_models.rake', 'lib/tasks/auto_annotate_models.rake'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
@@ -102,6 +103,7 @@ EOF"
 
 # Run Configs and Generators
 # ==================================================
+run "bundle install"
 run "rails g active_admin:install"
 run "rails g simple_form:install --bootstrap"
 run "rake db:create"
